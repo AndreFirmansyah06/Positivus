@@ -609,45 +609,138 @@
     </main>
     <footer>
       <div class="footer w-full flex justify-center">
-        <div class="footer w-[90%] bg-[#191A23] rounded-t-4xl px-10 py-5">
+        <div
+          class="footer w-[90%] bg-[#191A23] rounded-t-4xl px-10 py-5 relative"
+        >
           <div
-            class="footer-us-wrapper grid grid-cols-1 lg:grid-cols-2 border-b border-[#FFFFFF] py-10 gap-10"
+            class="desktop-navigation transition-all duration-800 ease-out"
+            id="bg-blur"
           >
-            <div class="contact-us-detail text-[#FFFFFF] space-y-8">
-              <p
-                class="bg-[#B9FF66] px-5 py-1 w-fit rounded-2xl text-[#000000]"
+            <div class="navigation grid grid-cols-2 xl:grid-cols-3 py-10">
+              <div class="logo w-fit">
+                <img src="./assets/Logo.png" alt="" />
+              </div>
+              <div class="nav-item hidden xl:flex gap-5 text-[#FFFFFF]">
+                <a href="#" class="underline">about-us</a>
+                <a href="#" class="underline">services</a>
+                <a href="#" class="underline">use cases</a>
+                <a href="#" class="underline">pricing</a>
+                <a href="#" class="underline">blog</a>
+              </div>
+              <div
+                class="find-me flex justify-end items-center text-[#FFFFFF] gap-5"
               >
-                contact us
-              </p>
-              <p>Email: info@positivus.com</p>
-              <p>Phone: 555-567-8901</p>
-              <p>
-                Address: 1234 Main St
-                <br />
-                Moonstone City, Stardust State 12345
-              </p>
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png"
+                  alt="linkedin"
+                  class="hidden xl:flex"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook-new.png"
+                  alt="facebook-new"
+                  class="hidden xl:flex"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios/30/FFFFFF/twitterx--v2.png"
+                  alt="twitterx--v2"
+                  class="hidden xl:flex"
+                />
+                <a
+                  href="javascript:void(0)"
+                  class="flex xl:hidden"
+                  onclick="showMenu()"
+                  ><i class="bx bx-menu text-4xl"></i>
+                </a>
+              </div>
             </div>
             <div
-              class="contact-us-form bg-[#292A32] flex flex-wrap gap-5 items-center justify-center xl:justify-start rounded-2xl px-5 py-10"
+              class="contact-us-wrapper grid grid-cols-1 lg:grid-cols-2 border-b border-[#FFFFFF] py-10 gap-10"
             >
-              <input
-                type="text"
-                placeholder="Email"
-                class="px-5 py-5 border border-[#FFFFFF] rounded-2xl placeholder:text-[#FFFFFF] w-full md:w-[90%] xl:w-fit"
-              />
-              <button
-                class="bg-[#B9FF66] px-3 md:px-10 py-5 rounded-2xl w-full md:w-[90%] xl:w-fit"
+              <div class="contact-us-detail text-[#FFFFFF] space-y-8">
+                <p
+                  class="bg-[#B9FF66] px-5 py-1 w-fit rounded-2xl text-[#000000]"
+                >
+                  contact us
+                </p>
+                <p>Email: info@positivus.com</p>
+                <p>Phone: 555-567-8901</p>
+                <p>
+                  Address: 1234 Main St
+                  <br />
+                  Moonstone City, Stardust State 12345
+                </p>
+              </div>
+              <div
+                class="contact-us-form bg-[#292A32] flex flex-wrap gap-5 items-center justify-center xl:justify-start rounded-2xl px-5 py-10"
               >
-                Subscribe to news
-              </button>
+                <input
+                  type="text"
+                  placeholder="Email"
+                  class="px-5 py-5 border border-[#FFFFFF] rounded-2xl placeholder:text-[#FFFFFF] w-full md:w-[90%] xl:w-fit"
+                />
+                <button
+                  class="bg-[#B9FF66] px-3 md:px-10 py-5 rounded-2xl w-full md:w-[90%] xl:w-fit"
+                >
+                  Subscribe to news
+                </button>
+              </div>
+            </div>
+            <div
+              class="copyright flex items-center text-[#FFFFFF] gap-10 py-10"
+            >
+              <p>© 2023 Positivus. All Rights Reserved.</p>
+              <a href="#" class="underline">Privacy Policy</a>
             </div>
           </div>
-          <div class="copyright flex items-center text-[#FFFFFF] gap-10 py-10">
-            <p>© 2023 Positivus. All Rights Reserved.</p>
-            <a href="#" class="underline">Privacy Policy</a>
+
+          <div
+            class="absolute right-0 w-0 opacity-0 top-10 bg-transparent text-[#FFFFFF] transition-all duration-1000 ease-in"
+            id="responsive-navbar"
+          >
+            <div class="responsive-wrapper flex flex-col items-center gap-10 py-20">
+              <div
+                class="navigation-responsive w-full mx-auto flex flex-col items-center gap-5"
+              >
+                <a href="javascript:void(0)" onclick="showMenu()"
+                  ><i class="bx bx-x text-4xl"></i>
+                </a>
+                <a href="#">about-us</a>
+                <a href="#">services</a>
+                <a href="#">use cases</a>
+                <a href="#">pricing</a>
+                <a href="#">blog</a>
+              </div>
+              <div class="icon flex gap-5">
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/FFFFFF/linkedin.png"
+                  alt="linkedin"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook-new.png"
+                  alt="facebook-new"
+                />
+                <img
+                  width="30"
+                  height="30"
+                  src="https://img.icons8.com/ios/30/FFFFFF/twitterx--v2.png"
+                  alt="twitterx--v2"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
