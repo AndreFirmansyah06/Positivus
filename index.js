@@ -16,3 +16,38 @@ function showMenu() {
   const wrapper = document.getElementById("bg-blur");
   wrapper.classList.toggle("blur-sm");
 }
+
+function showDetail(click) {
+  const detail = click.parentElement.nextElementSibling;
+
+  if (detail.classList.contains("max-h-0")) {
+    detail.classList.remove("max-h-0");
+    detail.classList.add("max-h-50");
+    detail.classList.add("border-t-2");
+    detail.classList.add("py-10");
+  } else {
+    detail.classList.add("max-h-0");
+    detail.classList.remove("max-h-50");
+    detail.classList.remove("border-t-2");
+    detail.classList.remove("py-10");
+  }
+
+  const wrapper = click.closest(".card-item");
+  if (wrapper.classList.contains("bg-[#F3F3F3]")) {
+    wrapper.classList.remove("bg-[#F3F3F3]");
+    wrapper.classList.add("bg-[#B9FF66]");
+  } else {
+    wrapper.classList.add("bg-[#F3F3F3]");
+    wrapper.classList.remove("bg-[#B9FF66]");
+  }
+
+  const button = click.querySelector("i");
+
+  if (button.classList.contains("bx-plus")) {
+    button.classList.remove("bx-plus");
+    button.classList.add("bx-minus");
+  } else {
+    button.classList.add("bx-plus");
+    button.classList.remove("bx-minus");
+  }
+}
