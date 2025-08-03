@@ -11,16 +11,107 @@
     <title>Positivus Digital Agency</title>
   </head>
   <body class="font-Grotesk capitalize">
-    <header></header>
+    <header>
+      <div class="wrapper flex justify-center w-full relative">
+        <div
+          class="desktop-header w-[90%] flex justify-between py-10 px-0 md:px-5 fixed bg-[#FFFFFF] z-10"
+        >
+          <div class="logo flex items-center gap-3">
+            <a href="#"><img src="./assets/Icon.png" alt="" /></a>
+            <a href="#" class="text-3xl">Positivus</a>
+          </div>
+          <div class="navigation flex items-center gap-8">
+            <a
+              href="#"
+              class="hover:bg-[#B9FF66] hover:rounded-xl hover:underline hover:scale-125 hover:p-2 transition-all duration-100 ease-linear hidden xl:flex"
+              >about us</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#B9FF66] hover:rounded-xl hover:underline hover:scale-125 hover:p-2 transition-all duration-100 ease-linear hidden xl:flex"
+              >services</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#B9FF66] hover:rounded-xl hover:underline hover:scale-125 hover:p-2 transition-all duration-100 ease-linear hidden xl:flex"
+              >use cases</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#B9FF66] hover:rounded-xl hover:underline hover:scale-125 hover:p-2 transition-all duration-100 ease-linear hidden xl:flex"
+              >pricing</a
+            >
+            <a
+              href="#"
+              class="hover:bg-[#B9FF66] hover:rounded-xl hover:underline hover:scale-125 hover:p-2 transition-all duration-100 ease-linear hidden xl:flex"
+              >blog</a
+            >
+            <a
+              href="#"
+              class="border rounded-2xl px-5 py-3 hover:bg-[#B9FF66] hover:underline hover:scale-125 transition-all duration-100 ease-linear hidden xl:flex"
+              >Request a Quote</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="flex xl:hidden"
+              onclick="showMenu()"
+              ><i class="bx bx-menu text-4xl"></i>
+            </a>
+          </div>
+        </div>
+        <div class="responsive-header w-full md:w-[50%] absolute top-5 right-0 bg-[#FFFFFF] z-20 h-[100vh]">
+          <div class="nav flex flex-col gap-5 ">
+            <a
+              href="#"
+              class="underline"
+              >about us</a
+            >
+            <a
+              href="#"
+              class="underline"
+              >services</a
+            >
+            <a
+              href="#"
+              class="underline"
+              >use cases</a
+            >
+            <a
+              href="#"
+              class="underline"
+              >pricing</a
+            >
+            <a
+              href="#"
+              class="underline"
+              >blog</a
+            >
+            <a
+              href="#"
+              class="border rounded-2xl px-5 py-3 hover:bg-[#B9FF66] hover:underline hover:scale-125 transition-all duration-100 ease-linear hidden xl:flex"
+              >Request a Quote</a
+            >
+            <a
+              href="javascript:void(0)"
+              class="flex xl:hidden"
+              onclick="showMenu()"
+              ><i class="bx bx-menu text-4xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <div class="wrapper flex justify-center w-full">
-        <div class="content w-[90%] mt-10 py-10">
+        <div class="content w-[90%] mt-30 md:mt-40 py-10">
           <div class="banner-wrapper grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div class="title flex flex-col gap-5">
-              <p class="font-normal text-6xl leading-22">
+              <p
+                class="font-normal text-4xl md:text-6xl leading-15 md:leading-22"
+              >
                 Navigating the digital landscape for success
               </p>
-              <br />
+              <br class="hidden md:flex" />
 
               <p class="font-light text-xl">
                 Our digital marketing agency helps businesses grow and succeed
@@ -414,7 +505,10 @@
                     href="javascript:void(0)"
                     onclick="showDetail(this)"
                     class="absolute right-5 bg-[#F3F3F3] rounded-full border-2 px-3 py-2"
-                    ><i class="bx bx-plus text-lg md:text-2xl lg:text-4xl button" style="color: #000000"></i>
+                    ><i
+                      class="bx bx-plus text-lg md:text-2xl lg:text-4xl button"
+                      style="color: #000000"
+                    ></i>
                   </a>
                 </div>
                 <div
@@ -444,7 +538,10 @@
                     href="javascript:void(0)"
                     onclick="showDetail(this)"
                     class="absolute right-5 bg-[#F3F3F3] rounded-full border-2 px-3 py-2"
-                    ><i class="bx bx-plus text-lg md:text-2xl lg:text-4xl button" style="color: #000000"></i>
+                    ><i
+                      class="bx bx-plus text-lg md:text-2xl lg:text-4xl button"
+                      style="color: #000000"
+                    ></i>
                   </a>
                 </div>
                 <div
@@ -474,7 +571,10 @@
                     href="javascript:void(0)"
                     onclick="showDetail(this)"
                     class="absolute right-5 bg-[#F3F3F3] rounded-full border-2 px-3 py-2"
-                    ><i class="bx bx-plus text-lg md:text-2xl lg:text-4xl button" style="color: #000000"></i>
+                    ><i
+                      class="bx bx-plus text-lg md:text-2xl lg:text-4xl button"
+                      style="color: #000000"
+                    ></i>
                   </a>
                 </div>
                 <div
@@ -504,7 +604,10 @@
                     href="javascript:void(0)"
                     onclick="showDetail(this)"
                     class="absolute right-5 bg-[#F3F3F3] rounded-full border-2 px-3 py-2"
-                    ><i class="bx bx-plus text-lg md:text-2xl lg:text-4xl button" style="color: #000000"></i>
+                    ><i
+                      class="bx bx-plus text-lg md:text-2xl lg:text-4xl button"
+                      style="color: #000000"
+                    ></i>
                   </a>
                 </div>
                 <div
@@ -534,7 +637,10 @@
                     href="javascript:void(0)"
                     onclick="showDetail(this)"
                     class="absolute right-5 bg-[#F3F3F3] rounded-full border-2 px-3 py-2"
-                    ><i class="bx bx-plus text-lg md:text-2xl lg:text-4xl button" style="color: #000000"></i>
+                    ><i
+                      class="bx bx-plus text-lg md:text-2xl lg:text-4xl button"
+                      style="color: #000000"
+                    ></i>
                   </a>
                 </div>
                 <div
