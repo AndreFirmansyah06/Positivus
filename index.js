@@ -51,3 +51,26 @@ function showDetail(click) {
     button.classList.remove("bx-minus");
   }
 }
+
+function showNavbar() {
+  const nav = document.getElementById("responsive-header");
+
+  // if (nav.classList.contains("w-0")) {
+  //   nav.classList.remove("w-0");
+  //   nav.classList.add("w-full", "md:w-[50%");
+  //   nav.classList.remove("opacity-0");
+  //   nav.classList.add("opacity-100");
+  // } else {
+  //   nav.classList.add("w-0");
+  //   nav.classList.remove("w-full", "md:w-[50%");
+  //   nav.classList.add("opacity-0");
+  //   nav.classList.remove("opacity-100");
+  // }
+
+  nav.classList.toggle("w-0");
+  nav.classList.toggle("w-full");
+  nav.classList.toggle("md:w-[50%]");
+
+  const wrapper = document.getElementById("main-content");
+  wrapper.classList.toggle("blur-xs");
+}
